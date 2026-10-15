@@ -1,0 +1,11 @@
+--- SALARY COMPARISON BY DEPARTMENT
+
+SELECT
+    department,
+    COUNT(*) AS employee_count,
+    ROUND(AVG(salary), 2) AS average_salary,
+    MIN(salary) AS lowest_salary,
+    MAX(salary) AS highest_salary
+FROM employees
+GROUP BY department
+ORDER BY average_salary DESC;

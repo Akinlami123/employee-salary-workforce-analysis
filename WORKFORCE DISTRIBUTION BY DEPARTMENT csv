@@ -1,0 +1,13 @@
+-- 7. WORKFORCE DISTRIBUTION BY DEPARTMENT
+
+SELECT
+    department,
+    COUNT(*) AS employee_count,
+    ROUND(
+        COUNT(*) * 100.0 /
+        (SELECT COUNT(*) FROM employees),
+        2
+    ) AS workforce_percentage
+FROM employees
+GROUP BY department
+ORDER BY employee_count DESC, department;
