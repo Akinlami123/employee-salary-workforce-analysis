@@ -1,8 +1,0 @@
-
-SELECT
-    COUNT(*) AS total_employees,
-    ROUND(AVG(salary), 2) AS average_salary,
-    MIN(salary) AS lowest_salary,
-    MAX(salary) AS highest_salary,
-    ROUND(SUM(salary), 2) AS total_annual_payroll
-FROM employees;
