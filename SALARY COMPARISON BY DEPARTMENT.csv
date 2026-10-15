@@ -1,0 +1,6 @@
+"department","employee_count","average_salary","lowest_salary","highest_salary"
+"IT",5,72400.00,44000.00,92000.00
+"Finance",4,69250.00,55000.00,88000.00
+"Sales",4,59750.00,46000.00,75000.00
+"Marketing",4,56750.00,45000.00,72000.00
+"HR",3,51666.67,39000.00,68000.00
